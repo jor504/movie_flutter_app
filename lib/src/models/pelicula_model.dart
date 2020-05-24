@@ -1,6 +1,6 @@
 /*Generado con paste JSON as code*/
 
-class Peliculas{
+class Peliculas{ //Clase Peliculas , que es basicamente una lista de peliculas
   
   List <Pelicula> items = new List();
 
@@ -25,6 +25,7 @@ class Peliculas{
 
 }
 
+//Clase pelicula que es la estructura de una pelicula
 class Pelicula {
   double popularity;
   int voteCount;
@@ -75,6 +76,20 @@ class Pelicula {
     overview = json['overview'];
     releaseDate = json['releaseDate'];
 
+
+  }
+
+  getPosterIMG(){
+
+
+    if (posterPath == null){
+      return 'http://via.placeholder.com/350x150';
+    }
+    else{
+       return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    }
+
+   
 
   }
 
