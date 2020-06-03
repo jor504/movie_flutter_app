@@ -93,6 +93,20 @@ class Pelicula {
 
   }
 
+  getBackGroundImage(){
+
+
+    if (backdropPath == null){
+      return 'http://via.placeholder.com/350x150';
+    }
+    else{
+       return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+
+   
+
+  }
+
 
 }
 
