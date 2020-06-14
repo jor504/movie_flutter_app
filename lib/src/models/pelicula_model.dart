@@ -41,6 +41,8 @@ class Pelicula {
   double voteAverage;
   String overview;
   String releaseDate;
+  
+  String uniqueId;
 
   Pelicula({
     this.popularity,
